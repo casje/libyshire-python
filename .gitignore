@@ -163,3 +163,7 @@ cython_debug/
 
 # VS Code
 .vscode/
+
+# due to using tox and pytest
+.tox
+.cache

@@ -1,12 +1,8 @@
-black==23.10.1
-isort>=5.12.0
-flake8-bugbear
 coverage
-codecov
-coveralls
 flake8
 pytest
-pytest-xdist
-pytest-cov
-wrapt
-flake8-pyproject
+pytest-runner
+wheel
+setuptools
+twine
+build

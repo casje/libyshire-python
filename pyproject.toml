@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libyshire"
+version = "0.0.1"
+license = {file = "LICENSE"}
+authors = [
+  { name = "Claudio Alves Jr" }
+]
+maintainers = [
+    { name="Claudio Alves Jr" }
+]
+description = "Pacote de funcionalidades utéis para a construção de software"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["calendário", "anbima", "calendar", "brazil", "brasil"]
+dependencies = [
+  "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/casje/libyshire-python"
+Repository = "https://github.com/casje/libyshire-python.git"
+Issues = "https://github.com/casje/libyshire-python/issues"
