@@ -1,28 +1,11 @@
 # ---------------------------------------------------------------------------------------
 # Objetivo: testes de unidade da classe Anbima
 # ---------------------------------------------------------------------------------------
-import os
-import sys
-
-try:
-    libyshire = os.path.abspath(
-        os.path.join(os.path.abspath(__file__),
-                     os.path.abspath('./../../src/')))
-
-    root = os.path.abspath(
-        os.path.join(os.path.abspath(__file__),
-                     os.path.abspath('./src/')))
-
-    sys.path.append(libyshire)
-    sys.path.append(root)
-
-except:
-    print('erro ao tentar importar modulo')
+from libyshire.anbima import Anbima
 
 
 def test_validacao_feriados_ano_2023():
     # Arrange
-    from libyshire.anbima import Anbima
     anbima = Anbima()
 
     # Act
@@ -35,7 +18,6 @@ def test_validacao_feriados_ano_2023():
 
 def test_validacao_feriados_ano_2024():
     # Arrange
-    from libyshire.anbima import Anbima
     anbima = Anbima()
 
     # Act

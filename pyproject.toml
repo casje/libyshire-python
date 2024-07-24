@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools >= 61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -27,10 +27,32 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-keywords = ["calendário", "anbima", "calendar", "brazil", "brasil"]
+keywords = [ "calendário", 
+             "anbima", 
+             "calendar", 
+             "brazil", 
+             "brasil"]
 dependencies = [
   "numpy",
 ]
+
+[project.optional-dependencies]
+dev = [ "flake8" ]
+test = [ "coverage", 
+         "pytest", 
+         "pytest-runner" ]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["libyshire*"]
+exclude = ["tests"]  
+namespaces = false 
+
+[tool.poetry]
+readme = "README.md"
+
+[tool.distutils.sdist]
+formats = "zip"
 
 [project.urls]
 Homepage = "https://github.com/casje/libyshire-python"

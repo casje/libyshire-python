@@ -1,8 +1,10 @@
-coverage
+# dev
 flake8
-pytest
-pytest-runner
 wheel
 setuptools
 twine
 build
+# test
+pytest
+pytest-runner
+coverage

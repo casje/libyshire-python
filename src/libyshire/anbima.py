@@ -20,8 +20,8 @@ class Anbima:
         Faz a geração do calendário Anbima de feriados usando como referência: <https://www.anbima.com.br/feriados/feriados.asp>
         :return: lista de feriados Anbima do ano solicitado
         """
-        if ((ano < 1980) or (ano > 2200)):
-            raise Exception('O ano informado deve ser entre 1980 e 2199')
+        if ((ano < 1980) or (ano > 2100)):
+            raise Exception('O ano informado deve ser entre 1980 e 2100')
 
         feriados: list = []
 
